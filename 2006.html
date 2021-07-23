@@ -36,20 +36,76 @@
         });
     </script>
 
+
+
     <style>
+        body {
+            background-color: whitesmoke;
+        }
+
         .game {
-            height: 100px;
+            height: 12vmax;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 5px;
+        }
+
+        .game img {
+            height: max(20px, 4vmax);
+        }
+
+        .game table {
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+        }
+
+        .game table td {
+            text-align: center;
+        }
+
+        nav img {
+            height: 40px;
             padding: 0px;
         }
 
+        nav .nav-link {
+            padding: 5px;
+        }
+
+        .nav-fill {
+            box-shadow: 0 1px 5px 0px black;
+            padding: 5px;
+            margin: 0px 0px 20px;
+        }
+
         .nav-subtitle {
+            font-size: 10pt;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0px;
+        }
+
+        .first-top-left {
+            background-image: url(table/first-top-left.svg);
+            background-size: cover;
+        }
+
+        .first-top-right {
+            background-image: url(table/first-top-right.svg);
+            background-size: cover;
+
+        }
+
+        .first-bottom-left {
+            background-image: url(table/first-bottom-left.svg);
+            background-size: cover;
+        }
+
+        .first-bottom-right {
+            background-image: url(table/first-bottom-right.svg);
+            background-size: cover;
         }
 
         .top-left {
@@ -87,6 +143,30 @@
             background-image: url(table/final.svg);
             background-size: cover;
         }
+
+        .small-final {
+            background-image: url(table/small-final.svg);
+            background-size: cover;
+        }
+
+        .winner-third {
+            background-image: url(table/winner-third.svg);
+            background-size: cover;
+        }
+
+        .middle-stroke {
+            background-image: url(table/middle-stroke.svg);
+            background-size: cover;
+        }
+
+        .world-cup-standings {
+            background: whitesmoke url(trophy.png) no-repeat;
+            background-size: auto 90%;
+            background-position: center;
+            font-size: 60%;
+            font-family: "Arial Narrow", sans-serif;
+            height: calc(100vh - 100px);
+        }
     </style>
 
     <!-- Facebook Pixel Code -->
@@ -116,233 +196,396 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <div class="container-fluid"></div>
-    <div class="row">
-        <nav class="nav nav-pills nav-fill w-100">
-            <a class="nav-link" id="link-1998" href="1998.html">
-                <img src="flags/france.png" width="40">
-                <div class="nav-subtitle">1998</div>
-            </a>
-            <a class="nav-link" id="link-2002" href="2002.html">
-                <img src="flags/brazil.png" width="40">
-                <div class="nav-subtitle">2002</div>
-            </a>
-            <a class="nav-link" id="link-2006" href="2006.html">
-                <img src="flags/italy.png" width="40">
-                <div class="nav-subtitle">2006</div>
-            </a>
-            <a class="nav-link" id="link-2010" href="2010.html">
-                <img src="flags/spain.png" width="40">
-                <div class="nav-subtitle">2010</div>
-            </a>
-            <a class="nav-link" id="link-2014" href="2014.html">
-                <img src="flags/germany.png" width="40">
-                <div class="nav-subtitle">2014</div>
-            </a>
-            <a class="nav-link" id="link-2018" href="2018.html">
-                <img src="flags/france.png" width="40">
-                <div class="nav-subtitle">2018</div>
-            </a>
-        </nav>
-    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-link" id="link-1998" href="1998.html">
+                    <img src="flags/france.png">
+                    <div class="nav-subtitle">1998</div>
+                </a>
+                <a class="nav-link" id="link-2002" href="2002.html">
+                    <img src="flags/brazil.png">
+                    <div class="nav-subtitle">2002</div>
+                </a>
+                <a class="nav-link" id="link-2006" href="2006.html">
+                    <img src="flags/italy.png">
+                    <div class="nav-subtitle">2006</div>
+                </a>
+                <a class="nav-link" id="link-2010" href="2010.html">
+                    <img src="flags/spain.png">
+                    <div class="nav-subtitle">2010</div>
+                </a>
+                <a class="nav-link" id="link-2014" href="2014.html">
+                    <img src="flags/germany.png">
+                    <div class="nav-subtitle">2014</div>
+                </a>
+                <a class="nav-link" id="link-2018" href="2018.html">
+                    <img src="flags/france.png">
+                    <div class="nav-subtitle">2018</div>
+                </a>
+            </nav>
+        </div>
 
-    <div class="row p-3">
-        <h1>FIFA World Cup 2006</h1>
-    </div>
 
-    <div class="row ">
-        <div class="col-3 game top-left">
-            <table>
-                <tr>
-                    <td><img src="flags/germany.png" width="35"></td>
-                    <td><img src="flags/sweden.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">2</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-3 game top-right">
-            <table>
-                <tr>
-                    <td><img src="flags/argentina.png" width="35"></td>
-                    <td><img src="flags/mexico.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">1</td>
-                    <td align="center">1</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-3 game top-left">
-            <table>
-                <tr>
-                    <td><img src="flags/england.png" width="35"></td>
-                    <td><img src="flags/ecuador.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-3 game top-right">
-            <table>
-                <tr>
-                    <td><img src="flags/portugal.png" width="35"></td>
-                    <td><img src="flags/netherlands.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">1</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-    </div>
-    <div class="row ">
-        <div class="col-6 game top-left">
-            <table>
-                <tr>
-                    <td><img src="flags/germany.png" width="35"></td>
-                    <td><img src="flags/argentina.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-6 game top-right">
-            <table>
-                <tr>
-                    <td><img src="flags/italy.png" width="35"></td>
-                    <td><img src="flags/ukraine.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">1</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-    </div>
-    <div class="row ">
-        <div class="col-6 offset-3 game top">
-            <table>
-                <tr>
-                    <td><img src="flags/germany.png" width="35"></td>
-                    <td><img src="flags/italy.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-    </div>
-    <div class="row ">
-        <div class="col-6 offset-3 game final">
-            <table>
-                <tr>
-                    <td><img src="flags/italy.png" width="35"></td>
-                    <td><img src="flags/france.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">1</td>
-                    <td align="center">1</td>
-                </tr>
-            </table>
-    </div>
-    </div>
-    <div class="row ">
-        <div class="col-6 offset-3 game bottom">
-            <table>
-                <tr>
-                    <td><img src="flags/portugal.png" width="35"></td>
-                    <td><img src="flags/france.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">1</td>
-                </tr>
-            </table>
-    </div>
-    </div>
-    <div class="row ">
-        <div class="col-6 game bottom-left">
-            <table>
-                <tr>
-                    <td><img src="flags/england.png" width="35"></td>
-                    <td><img src="flags/portugal.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-6 game bottom-right">
-            <table>
-                <tr>
-                    <td><img src="flags/brazil.png" width="35"></td>
-                    <td><img src="flags/france.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-    </div>
-    <div class="row ">
-        <div class="col-3 game bottom-left">
-            <table>
-                <tr>
-                    <td><img src="flags/italy.png" width="35"></td>
-                    <td><img src="flags/australia.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-3 game bottom-right">
-            <table>
-                <tr>
-                    <td><img src="flags/switzerland.png" width="35"></td>
-                    <td><img src="flags/ukraine.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">0</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-3 game bottom-left">
-            <table>
-                <tr>
-                    <td><img src="flags/brazil.png" width="35"></td>
-                    <td><img src="flags/ghana.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">2</td>
-                    <td align="center">0</td>
-                </tr>
-            </table>
-    </div>
-        <div class="col-3 game bottom-right">
-            <table>
-                <tr>
-                    <td><img src="flags/spain.png" width="35"></td>
-                    <td><img src="flags/france.png" width="35"></td>
-                </tr>
-                <tr>
-                    <td align="center">1</td>
-                    <td align="center">1</td>
-                </tr>
-            </table>
-    </div>
+        <div class="world-cup-standings">
+            <div class="row justify-content-center">
+                <h1>2006 FIFA World Cup</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game first-top-left">
+                    <table>
+                        <tr>
+                            <td>GER</td>
+                            <td>-</td>
+                            <td>SWE</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/germany.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/sweden.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 game first-top-right">
+                    <table>
+                        <tr>
+                            <td>ARG</td>
+                            <td>-</td>
+                            <td>MEX</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/argentina.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/mexico.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 game first-top-left">
+                    <table>
+                        <tr>
+                            <td>ENG</td>
+                            <td>-</td>
+                            <td>ECU</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/england.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/ecuador.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 game first-top-right">
+                    <table>
+                        <tr>
+                            <td>POR</td>
+                            <td>-</td>
+                            <td>NET</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/portugal.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/netherlands.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game top-left">
+                    <table>
+                        <tr>
+                            <td>GER</td>
+                            <td>-</td>
+                            <td>ARG</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/germany.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/argentina.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 game top-right">
+                    <table>
+                        <tr>
+                            <td>ITA</td>
+                            <td>-</td>
+                            <td>UKR</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/italy.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/ukraine.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game top">
+                    <table>
+                        <tr>
+                            <td>GER</td>
+                            <td>-</td>
+                            <td>ITA</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/germany.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/italy.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game small-final">
+                    <table>
+                        <tr>
+                            <td>GER</td>
+                            <td>-</td>
+                            <td>POR</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/germany.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/portugal.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-1 game winner-third">
+                    <table>
+                        <tr>
+                            <td>GER</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/Germany.png" class="table-image"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-4 game final">
+                    <table>
+                        <tr>
+                            <td>ITA</td>
+                            <td>-</td>
+                            <td>FRA</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/italy.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/france.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-2 game middle-stroke"></div>
+                <div class="col-1 game winner-third">
+                    <table>
+                        <tr>
+                            <td>ITA</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/Italy.png" class="table-image"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Winner</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-1 game"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game bottom">
+                    <table>
+                        <tr>
+                            <td>POR</td>
+                            <td>-</td>
+                            <td>FRA</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/portugal.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/france.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game bottom-left">
+                    <table>
+                        <tr>
+                            <td>ENG</td>
+                            <td>-</td>
+                            <td>POR</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/england.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/portugal.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 game bottom-right">
+                    <table>
+                        <tr>
+                            <td>BRA</td>
+                            <td>-</td>
+                            <td>FRA</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/brazil.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/france.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 game first-bottom-left">
+                    <table>
+                        <tr>
+                            <td>ITA</td>
+                            <td>-</td>
+                            <td>AUS</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/italy.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/australia.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 game first-bottom-right">
+                    <table>
+                        <tr>
+                            <td>SWI</td>
+                            <td>-</td>
+                            <td>UKR</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/switzerland.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/ukraine.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 game first-bottom-left">
+                    <table>
+                        <tr>
+                            <td>BRA</td>
+                            <td>-</td>
+                            <td>GHA</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/brazil.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/ghana.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 game first-bottom-right">
+                    <table>
+                        <tr>
+                            <td>SPA</td>
+                            <td>-</td>
+                            <td>FRA</td>
+                        </tr>
+                        <tr>
+                            <td><img src="flags/spain.png" class="table-image"></td>
+                            <td></td>
+                            <td><img src="flags/france.png" class="table-image"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 
